@@ -84,22 +84,19 @@ html {
  shape-margin: .75rem;
  background: var(--bright_three);
  clip-path: polygon(12.48vh 56.52%, 100% 0px, 120% 155px);
+ overflow: hidden;
 }
 
 #float_foot {
-  height: 20.5rem;
-  width: 16rem;
-  shape-outside: circle(9rem at 9.14rem 9.27rem);
+  height: 141%;
+  width: 75%;
+  shape-outside: circle(9rem at 16.83rem 27.95rem);
   float: right;
-  shape-margin: .75rem;
+  shape-margin: 1rem;
   background: var(--try_one);
-  clip-path: circle(9rem at 9.14rem 9.27rem);
-
-  /*
-position: relative;
-  bottom: 0rem;*/
-
-
+  clip-path: circle(9rem at 16.83rem 27.95rem);
+  display: flex;
+  align-items: flex-end;
 }
 
 
@@ -190,6 +187,7 @@ main {
 main p {
   margin: 0 2rem 1rem 2rem;
   text-align: left;
+  overflow: visible;
 }
 
 p {
@@ -228,15 +226,18 @@ p {
   grid-column: 1 / 9;
   grid-row: 8 / 13;
   /*   display: grid;  */
-
-
   /*! padding: 1rem 0 1rem 0; */
   /*! flex-direction: column; */
-  grid-template: subgrid;
+  /*! grid-template: subgrid; */
   /*! grid-template-columns: subgrid; */
   /*! display: block; */
-  grid-template-columns: 10vw 20vw repeat(4, 10vw) 20vw 10vw;
-  grid-template-rows: [one] fit-content(3em) [two] fit-content(5rem) [three] fit-content(2rem) [four] fit-content(10rem) [five] fit-content(10rem);
+  /*! grid-template-columns: 10vw 20vw repeat(4, 10vw) 20vw 10vw; */
+  /*! grid-template-rows: [one] fit-content(3em) [two] fit-content(5rem) [three] fit-content(2rem) [four] fit-content(10rem) [five] fit-content(10rem); */
+  display: flex;
+  /*! overflow: hidden; */
+  /*! resize: horizontal; */
+  margin-bottom: ;
+  /*! margin-bottom: 100px; */
 }
 
 #bio p {
@@ -250,32 +251,15 @@ p {
   grid-row: 1 / 4;
 }
 
-#bio p:nth-child(1n + 0) {
-  /*
-  grid-column-start: 1;
-  grid-column-end: 9;*/
-  grid-row-start: n;
 
-/* background: var(--try_two);*/
 
-}
-
-#bio > p:nth-child(1) {
- grid: row;
- grid-row: 1 / 2;
+#bio div p:nth-child(2) {
  padding-top: 2rem;
 }
 
-#bio > p:nth-child(2) {
- grid-row: 2 / 3;
-}
-
-#bio > p:nth-child(4) {
- grid-row: 3 / 4;
-}
 
 #bio p:nth-last-child(1) {
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 
