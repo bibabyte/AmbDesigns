@@ -128,12 +128,12 @@ h1 {
   height: 1.5rem;
 }
 
-.content{
+.content {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 1rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   grid-column: 1 / 9;
   grid-row: 11 / 12;
 }
@@ -201,6 +201,10 @@ p {
   font-size: .75rem;
 }
 
+.credit p {
+  text-align: center;
+}
+
 .credit p span{
   display: block;
   justify-self: center;
@@ -239,17 +243,74 @@ p {
 
 
 
-
 /* MEDIA */
+@media screen and (max-width: 24em) {
+  #float_foot {
+    height: 143%;
+    width: 75%;
+    shape-outside: circle(9rem at 16.58rem 30.26rem);
+    float: right;
+    shape-margin: 1rem;
+    background: var(--try_one);
+    clip-path: circle(9rem at 16.58rem 30.26rem);
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 23.75em) {
+  #float_foot {
+    height: 141%;
+    width: 75%;
+    shape-outside: circle(9rem at 20.27rem 25.45rem);
+    float: right;
+    shape-margin: 1rem;
+    background: var(--try_one);
+    clip-path: circle(9rem at 20.27rem 25.45rem);
+    display: flex;
+    align-items: flex-end;
+  }
+
+}
 
 
-@media screen and ( min-width: 550px) {      /*   min-width === at least   */
+@media screen and (min-width: 28.125em) {
+  #float_foot {
+    height: 150%;
+    width: 50%;
+    shape-outside: circle(9rem at 38.81vw 24.50em);
+    float: right;
+    shape-margin: 1rem;
+    background: var(--try_one);
+    clip-path: circle(9rem at 38.81vw 24.50em);
+    display: flex;
+    align-items: flex-end;
+  }
 
+  #bio p:nth-last-child(1) {
+    padding-bottom: 6em;
+  }
+}
+
+@media only screen and ( min-width: 31.25em) {
   .credit p span{
     display: inline;
   }
 
   p {
     text-align: justify;
+  }
+
+  #float_foot {
+    height: 173%;
+    width: 50%;
+    shape-outside: circle(9rem at 38.81vw 24.50em);
+    float: right;
+    shape-margin: 1rem;
+    background: var(--try_one);
+    clip-path: circle(9rem at 38.81vw 24.50em);
+    display: flex;
+    align-items: flex-end;
+    background: var(--try_two);
   }
 }
