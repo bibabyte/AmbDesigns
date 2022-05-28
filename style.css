@@ -56,8 +56,6 @@ html {
   height: 18rem;
   clip-path: circle(9rem at 82.92vw 9.43rem);
   bottom: 5.5rem;
-  /*   background-color: var(--try_one);  */
-
   z-index: 0;
   clip-path: circle(9rem at 47.56vw 9.01rem);
   grid-column: 4 / 9;
@@ -72,11 +70,9 @@ html {
   background: var(--try_one);
   clip-path: circle(12rem at 1.19rem 9.32rem);
   shape-margin: 1rem;
-  /*! float: z; */
 }
 
 #float_tri {
- /*! grid-column-start: 7; */
  height: 12rem;
  width: 12rem;
  shape-outside: polygon(12.48vh 56.52%, 100% 0px, 120% 155px);
@@ -98,8 +94,6 @@ html {
   display: flex;
   align-items: flex-end;
 }
-
-
 
 body {
   color: var(--bright_one);
@@ -123,8 +117,6 @@ h1 {
   position: relative;
   background: var(--bkgd);
   padding: 1rem;
-  /*   padding-bottom: 2rem;  */
-
   grid-column: 1 / 9;
   grid-row: 2 / 3;
 }
@@ -164,8 +156,6 @@ h1 {
   padding: 0;
 }
 
-
-
 a {
   color: var(--bright_two);
   text-decoration: underline;
@@ -178,20 +168,17 @@ main {
   grid-row: 1 / 8;
   display: contents;
   display: block;
-  /*! display: inline; */
-  /*! display: flex; */
-  /*! flex-direction: column; */
 }
 
 
 main p {
   margin: 0 2rem 1rem 2rem;
-  text-align: left;
   overflow: visible;
 }
 
 p {
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .space {
@@ -221,28 +208,14 @@ p {
 }
 
 #bio {
-  /*! background: var(--try_three); */
   color: var(--bkgd);
   grid-column: 1 / 9;
   grid-row: 8 / 13;
-  /*   display: grid;  */
-  /*! padding: 1rem 0 1rem 0; */
-  /*! flex-direction: column; */
-  /*! grid-template: subgrid; */
-  /*! grid-template-columns: subgrid; */
-  /*! display: block; */
-  /*! grid-template-columns: 10vw 20vw repeat(4, 10vw) 20vw 10vw; */
-  /*! grid-template-rows: [one] fit-content(3em) [two] fit-content(5rem) [three] fit-content(2rem) [four] fit-content(10rem) [five] fit-content(10rem); */
   display: flex;
-  /*! overflow: hidden; */
-  /*! resize: horizontal; */
   margin-bottom: ;
-  /*! margin-bottom: 100px; */
 }
 
 #bio p {
-  /*! margin: 0 2rem 1rem 2rem; */
-  text-align: left;
   background: var(--try_three);
   padding: 0 2rem 1rem 2rem;
   margin: 0;
@@ -270,13 +243,13 @@ p {
 /* MEDIA */
 
 
-@media screen and ( min-width: 550px) {
+@media screen and ( min-width: 550px) {      /*   min-width === at least   */
 
   .credit p span{
     display: inline;
   }
 
-p {
-    margin: 0 2rem 1rem 2rem;
+  p {
     text-align: justify;
+  }
 }
